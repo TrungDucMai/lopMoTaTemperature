@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(doC){
+        this.doC=doC;
+        this.converttoF= function (){
+            return 9/5*this.doC+32;
+        }
+        this.converttoK= function (){
+            return this.doC+273.15;
+        }
+    }
+    let C = new Temperature(25);
+    let F = C.converttoF();
+    let K = C.converttoK();
+    console.log(F+'va'+K)
+
+
+</script>
+</body>
+</html>
